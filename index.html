@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shivansh Verma | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* COLORS */
+:root {
+    --bg: linear-gradient(135deg, #0f172a, #1e3a8a);
+    --card: rgba(255,255,255,0.05);
+    --accent: #38bdf8;
+    --accent2: #a78bfa;
+    --text: #e2e8f0;
+}
+
+/* BODY */
+body {
+    background: var(--bg);
+    color: var(--text);
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.4);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 140px 20px 80px;
+}
+
+header h1 {
+    font-size: 3rem;
+    background: linear-gradient(90deg, #38bdf8, #a78bfa);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+header p {
+    margin-top: 10px;
+    color: #cbd5f5;
+}
+
+/* SECTION */
+section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: var(--accent);
+}
+
+/* CARD */
+.card {
+    background: var(--card);
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.01);
+    border-color: var(--accent);
+}
+
+/* SKILLS */
+.skill {
+    margin-top: 20px;
+}
+
+.bar {
+    background: rgba(255,255,255,0.1);
+    height: 10px;
+    border-radius: 10px;
+    margin-top: 8px;
+}
+
+.fill {
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #38bdf8, #a78bfa);
+}
+
+/* CONTACT */
+.contact a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+/* ANIMATION */
+.card {
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* RESPONSIVE */
+@media(max-width: 600px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#achievements">Achievements</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<!-- HEADER -->
+<header>
+<h1>Shivansh Verma</h1>
+<p>BBA Student | Marketing • Business • Finance</p>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+<p>
+Ambitious BBA student passionate about marketing, business strategy, and finance.
+With hands-on experience from internships and a family jewellery business,
+I understand real-world sales, customer psychology, and growth strategies.
+</p>
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+<h2>Education</h2>
+<div class="card">
+<p><strong>BBA</strong> – Currently Pursuing</p>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<h2>Skills</h2>
+<div class="card">
+
+<div class="skill">Communication
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
+
+<div class="skill">Sales & Marketing
+<div class="bar"><div class="fill" style="width:85%"></div></div>
+</div>
+
+<div class="skill">Business Understanding
+<div class="bar"><div class="fill" style="width:80%"></div></div>
+</div>
+
+<div class="skill">MS Excel
+<div class="bar"><div class="fill" style="width:70%"></div></div>
+</div>
+
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+<h2>Experience</h2>
+
+<div class="card">
+<h3>Marketing Intern</h3>
+<p>• Lead generation</p>
+<p>• Client communication</p>
+<p>• Conversion strategies</p>
+</div>
+
+<div class="card">
+<h3>Family Business (Jewellery)</h3>
+<p>• Customer relationship building</p>
+<p>• Sales & trust management</p>
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<h2>Projects</h2>
+<div class="card">
+<p>Coming soon — working on real-world marketing & analytics projects.</p>
+</div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+<h2>Achievements</h2>
+<div class="card">
+<p>🏆 NCC A Certificate holder</p>
+<p>⚽ State-level football player</p>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact</h2>
+<div class="card contact">
+<p>Email: <a href="mailto:sv4678996@gmail.com">sv4678996@gmail.com</a></p>
+<p>Phone: <a href="tel:9302667282">9302667282</a></p>
+<p>LinkedIn: <a href="#">Add your profile</a></p>
+</div>
+</section>
+
+</body>
+</html>
