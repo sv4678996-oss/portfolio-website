@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishna Jewellers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ══════════ NAVIGATION ══════════ -->
+<nav>
+  <div class="nav-logo" onclick="goTo('home')">Krishna <span>Jewellers</span></div>
+  <ul class="nav-links">
+    <li><a onclick="goTo('home')"     id="nav-home"     class="active">Home</a></li>
+    <li><a onclick="goTo('about')"    id="nav-about">About</a></li>
+    <li><a onclick="goTo('products')" id="nav-products">Collections</a></li>
+    <li><a onclick="goTo('gallery')"  id="nav-gallery">Gallery</a></li>
+    <li><a onclick="goTo('contact')"  id="nav-contact">Contact</a></li>
+  </ul>
+  <div class="nav-cta" onclick="goTo('contact')">Visit Us</div>
+</nav>
+
+
+<!-- ══════════════════════════════════
+         HOME PAGE
+══════════════════════════════════ -->
+<div id="page-home" class="page active">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-left">
+      <p class="hero-tag">Est. 1987 · Indore</p>
+      <h1>Crafted for<br><em>Timeless</em><br>Moments</h1>
+      <p class="hero-sub">Handcrafted jewellery that celebrates life's most precious occasions. Every piece tells a story, every stone holds a memory.</p>
+      <div class="hero-actions">
+        <div class="btn-primary" onclick="goTo('products')">Explore Collections</div>
+        <div class="btn-ghost" onclick="goTo('about')">Our Story <span class="arrow">→</span></div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-visual">
+        <div class="jewel-illustration">
+          <div class="ring-outer"><div class="orbit-dot"></div></div>
+          <div class="ring-mid"></div>
+          <div class="ring-inner"></div>
+          <div class="gem-center"></div>
+          <div class="gem-sparkle"></div>
+          <div class="gem-sparkle"></div>
+          <div class="gem-sparkle"></div>
+        </div>
+      </div>
+      <div class="hero-ornament">KJ</div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee-bar">
+    <div class="marquee-track">
+      <span class="marquee-item">22K Gold Jewellery</span>
+      <span class="marquee-item">Diamond Collections</span>
+      <span class="marquee-item">Bridal Sets</span>
+      <span class="marquee-item">Silver Ornaments</span>
+      <span class="marquee-item">Custom Designs</span>
+      <span class="marquee-item">Certified Stones</span>
+      <span class="marquee-item">Antique Jewellery</span>
+      <span class="marquee-item">22K Gold Jewellery</span>
+      <span class="marquee-item">Diamond Collections</span>
+      <span class="marquee-item">Bridal Sets</span>
+      <span class="marquee-item">Silver Ornaments</span>
+      <span class="marquee-item">Custom Designs</span>
+      <span class="marquee-item">Certified Stones</span>
+      <span class="marquee-item">Antique Jewellery</span>
+    </div>
+  </div>
+
+  <!-- Collections -->
+  <section style="padding-top: 100px; padding-bottom: 0;">
+    <div class="section-tag">Our Collections</div>
+    <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+      <h2 class="section-title">Discover the<br><em>Finest Pieces</em></h2>
+      <div class="btn-ghost" onclick="goTo('products')" style="margin-bottom: 8px;">View All <span class="arrow">→</span></div>
+    </div>
+    <div class="collections-grid">
+      <div class="collection-card" onclick="goTo('products')">
+        <div class="card-bg" style="background: linear-gradient(160deg, #2C2416 0%, #1C1A17 100%);">
+          <div class="card-icon">💍</div>
+        </div>
+        <div class="card-overlay">
+          <div class="card-cat">Featured</div>
+          <div class="card-name">Bridal Collection</div>
+          <div class="card-link">Shop Now →</div>
+        </div>
+      </div>
+      <div class="collection-card" onclick="goTo('products')">
+        <div class="card-bg" style="background: #E8DFD0;">
+          <div class="card-icon">📿</div>
+        </div>
+        <div class="card-overlay">
+          <div class="card-cat">Everyday Wear</div>
+          <div class="card-name">Gold Necklaces</div>
+          <div class="card-link">Shop Now →</div>
+        </div>
+      </div>
+      <div class="collection-card" onclick="goTo('products')">
+        <div class="card-bg" style="background: #E0D8CC;">
+          <div class="card-icon">💎</div>
+        </div>
+        <div class="card-overlay">
+          <div class="card-cat">Precious Stones</div>
+          <div class="card-name">Diamond Rings</div>
+          <div class="card-link">Shop Now →</div>
+        </div>
+      </div>
+      <div class="collection-card" onclick="goTo('products')">
+        <div class="card-bg" style="background: #D8D4CA;">
+          <div class="card-icon">⚜️</div>
+        </div>
+        <div class="card-overlay">
+          <div class="card-cat">Heritage</div>
+          <div class="card-name">Antique Sets</div>
+          <div class="card-link">Shop Now →</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section>
+    <div style="text-align: center;">
+      <div class="section-tag" style="justify-content: center;">Why Choose Us</div>
+      <h2 class="section-title" style="text-align: center;">A Legacy of <em>Trust</em></h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-number">37</div>
+        <div class="why-title">Years of Excellence</div>
+        <div class="why-desc">Serving Indore and beyond since 1987, with a reputation built on quality and trust.</div>
+      </div>
+      <div class="why-item">
+        <div class="why-number">BIS</div>
+        <div class="why-title">Hallmark Certified</div>
+        <div class="why-desc">Every piece carries BIS hallmark certification, guaranteeing genuine purity and quality.</div>
+      </div>
+      <div class="why-item">
+        <div class="why-number">5K+</div>
+        <div class="why-title">Happy Families</div>
+        <div class="why-desc">Over 5,000 families have trusted us for their most important celebrations and milestones.</div>
+      </div>
+      <div class="why-item">
+        <div class="why-number">∞</div>
+        <div class="why-title">Lifetime Service</div>
+        <div class="why-desc">Free cleaning, polishing, and maintenance for every piece purchased from our store.</div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- end #page-home -->
+
+
+<!-- ══════════════════════════════════
+         ABOUT PAGE
+══════════════════════════════════ -->
+<div id="page-about" class="page">
+  <div style="padding-top: 72px;">
+
+    <section style="padding-bottom: 60px;">
+      <div class="about-split">
+        <div class="about-visual">
+          <div class="about-visual-inner">
+            <div class="about-ring-big"></div>
+            <div class="about-ring-sm"></div>
+            <div class="about-glyph">KJ</div>
+          </div>
+          <div class="about-badge">
+            <span class="badge-num">37</span>
+            <span class="badge-label">Years of<br>Excellence</span>
+          </div>
+        </div>
+        <div class="about-text-block">
+          <div>
+            <div class="section-tag">Our Story</div>
+            <h2 class="section-title">Where Tradition<br>Meets <em>Artistry</em></h2>
+            <div class="divider"></div>
+            <p style="color: var(--stone); line-height: 1.9; font-size: 15px;">
+              Founded in 1987 by Shri Ramesh Kumar in the heart of Indore, Krishna Jewellers began as a modest workshop with a profound belief: that every piece of jewellery should carry a soul.
+            </p>
+            <p style="color: var(--stone); line-height: 1.9; font-size: 15px; margin-top: 16px;">
+              Three decades later, we remain a family-run establishment, now in its second generation. Our craftsmen — many of whom have been with us for over 20 years — blend traditional Rajasthani and Mughal techniques with contemporary sensibility.
+            </p>
+          </div>
+          <div class="about-stat-row">
+            <div class="about-stat">
+              <div class="stat-val">5,000+</div>
+              <div class="stat-label">Families Served</div>
+            </div>
+            <div class="about-stat">
+              <div class="stat-val">22K</div>
+              <div class="stat-label">Pure Gold Standard</div>
+            </div>
+            <div class="about-stat">
+              <div class="stat-val">1987</div>
+              <div class="stat-label">Year Founded</div>
+            </div>
+            <div class="about-stat">
+              <div class="stat-val">BIS</div>
+              <div class="stat-label">Hallmark Certified</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section style="background: var(--cream-dark); padding-top: 80px; padding-bottom: 80px;">
+      <div style="text-align: center; margin-bottom: 60px;">
+        <div class="section-tag" style="justify-content: center;">Our Values</div>
+        <h2 class="section-title" style="text-align: center;">What We <em>Stand For</em></h2>
+      </div>
+      <div class="about-values" style="max-width: 720px; margin: 0 auto;">
+        <div class="value-row">
+          <div class="value-num">01</div>
+          <div>
+            <div class="value-title">Uncompromising Purity</div>
+            <div class="value-desc">Every gram of gold, every stone, every setting is held to the strictest standards of purity. We never compromise on what goes into your jewellery.</div>
+          </div>
+        </div>
+        <div class="value-row">
+          <div class="value-num">02</div>
+          <div>
+            <div class="value-title">Artisanal Craftsmanship</div>
+            <div class="value-desc">Our master craftsmen spend hours — sometimes days — on a single piece, ensuring every detail is perfected before it reaches your hands.</div>
+          </div>
+        </div>
+        <div class="value-row">
+          <div class="value-num">03</div>
+          <div>
+            <div class="value-title">Transparent Pricing</div>
+            <div class="value-desc">We believe in complete transparency. Our pricing is straightforward, with no hidden charges — just fair value for genuine quality.</div>
+          </div>
+        </div>
+        <div class="value-row">
+          <div class="value-num">04</div>
+          <div>
+            <div class="value-title">Lifelong Relationship</div>
+            <div class="value-desc">We see every purchase as the beginning of a relationship. From free maintenance to buyback guarantees, we stand by our customers for life.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section>
+      <div class="section-tag">Our Team</div>
+      <h2 class="section-title">The Faces Behind<br><em>Krishna Jewellers</em></h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar">RK</div>
+          <div class="team-name">Shri Ramesh Kumar</div>
+          <div class="team-role">Founder &amp; Master Craftsman</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">AK</div>
+          <div class="team-name">Ankit Kumar</div>
+          <div class="team-role">Director &amp; Head of Design</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">PK</div>
+          <div class="team-name">Priya Kumar</div>
+          <div class="team-role">Gemologist &amp; Client Relations</div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div><!-- end #page-about -->
+
+
+<!-- ══════════════════════════════════
+         COLLECTIONS / PRODUCTS PAGE
+══════════════════════════════════ -->
+<div id="page-products" class="page">
+  <div style="padding-top: 72px;">
+
+    <section style="padding-bottom: 0;">
+      <div class="section-tag">Our Collections</div>
+      <h2 class="section-title">Crafted with <em>Devotion</em></h2>
+      <p class="section-sub">Every piece in our collection is a testament to generations of skill, love, and artistry.</p>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterProducts('all', this)">All</button>
+        <button class="filter-btn" onclick="filterProducts('gold', this)">Gold</button>
+        <button class="filter-btn" onclick="filterProducts('diamond', this)">Diamond</button>
+        <button class="filter-btn" onclick="filterProducts('silver', this)">Silver</button>
+        <button class="filter-btn" onclick="filterProducts('bridal', this)">Bridal</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="productsGrid">
+        <div class="product-card" data-cat="bridal">
+          <div class="product-badge">New</div>
+          <div class="product-img" style="background: #2C2416;">💍</div>
+          <div class="product-info">
+            <div class="product-cat">Bridal</div>
+            <div class="product-name">Kundan Bridal Set</div>
+            <div class="product-mat">22K Gold · Kundan Stones</div>
+            <div class="product-price">₹ 1,85,000</div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="diamond">
+          <div class="product-img" style="background: #E0D8CC;">💎</div>
+          <div class="product-info">
+            <div class="product-cat">Diamond</div>
+            <div class="product-name">Solitaire Ring</div>
+            <div class="product-mat">18K White Gold · GIA Diamond</div>
+            <div class="product-price">₹ 95,000</div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="gold">
+          <div class="product-img" style="background: #D4C4A0;">📿</div>
+          <div class="product-info">
+            <div class="product-cat">Gold</div>
+            <div class="product-name">Temple Necklace</div>
+            <div class="product-mat">22K Gold · Handcrafted</div>
+            <div class="product-price">₹ 68,000</div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="silver">
+          <div class="product-badge">Popular</div>
+          <div class="product-img" style="background: #D8D8D8;">🥈</div>
+          <div class="product-info">
+            <div class="product-cat">Silver</div>
+            <div class="product-name">Oxidised Choker</div>
+            <div class="product-mat">925 Sterling Silver</div>
+            <div class="product-price">₹ 4,200</div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="gold">
+          <div class="product-img" style="background: #C8B888;">⚜️</div>
+          <div class="product-info">
+            <div class="product-cat">Gold</div>
+            <div class="product-name">Antique Jhumkas</div>
+            <div class="product-mat">22K Gold · Meenakari</div>
+            <div class="product-price">₹ 28,500</div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="diamond">
+          <div class="product-img" style="background: #E8E0D4;">✨</div>
+          <div class="product-info">
+            <div class="product-cat">Diamond</div>
+            <div class="product-name">Diamond Bangles</div>
+            <div class="product-mat">18K Gold · SI-VVS Diamonds</div>
+            <div class="product-price">₹ 1,20,000</div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="bridal">
+          <div class="product-img" style="background: #302818;">🌸</div>
+          <div class="product-info">
+            <div class="product-cat">Bridal</div>
+            <div class="product-name">Mang Tikka Set</div>
+            <div class="product-mat">22K Gold · Polki</div>
+            <div class="product-price">₹ 45,000</div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="gold">
+          <div class="product-img" style="background: #D0C090;">🌿</div>
+          <div class="product-info">
+            <div class="product-cat">Gold</div>
+            <div class="product-name">Leaf Bracelet</div>
+            <div class="product-mat">22K Gold · Lightweight</div>
+            <div class="product-price">₹ 16,800</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services-section">
+      <div style="text-align: center;">
+        <div class="section-tag" style="justify-content: center;">Our Services</div>
+        <h2 class="section-title" style="text-align: center;">Beyond the <em>Purchase</em></h2>
+        <p class="section-sub" style="margin: 0 auto; text-align: center;">We offer a complete range of jewellery services to care for your precious pieces.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🛠️</div>
+          <div class="service-title">Custom Design</div>
+          <div class="service-desc">Bring your vision to life. Our artisans work with you to create one-of-a-kind pieces tailored to your taste and budget.</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">✨</div>
+          <div class="service-title">Repair &amp; Restoration</div>
+          <div class="service-desc">From simple repairs to full restoration of antique pieces, our craftsmen handle every job with care and precision.</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🔁</div>
+          <div class="service-title">Exchange Programme</div>
+          <div class="service-desc">Trade in your old gold and diamonds for new designs. We offer fair valuations and transparent exchange rates.</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🎁</div>
+          <div class="service-title">Gift Packaging</div>
+          <div class="service-desc">Beautiful, occasion-ready gift packaging for all purchases — weddings, birthdays, anniversaries, and more.</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🔬</div>
+          <div class="service-title">Stone Certification</div>
+          <div class="service-desc">All diamonds and precious stones come with internationally recognised certificates from GIA or IGI.</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🧹</div>
+          <div class="service-title">Free Cleaning</div>
+          <div class="service-desc">Lifetime free ultrasonic cleaning and polishing for any jewellery purchased from Krishna Jewellers.</div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div><!-- end #page-products -->
+
+
+<!-- ══════════════════════════════════
+         GALLERY PAGE
+══════════════════════════════════ -->
+<div id="page-gallery" class="page">
+  <div style="padding-top: 72px;">
+
+    <section style="padding-bottom: 40px;">
+      <div class="section-tag">Gallery</div>
+      <h2 class="section-title">A Glimpse of Our <em>Craft</em></h2>
+      <p class="section-sub">Each photograph captures the soul of a piece lovingly brought to life in our workshop.</p>
+    </section>
+
+    <div style="padding: 0 80px 80px;">
+      <div class="gallery-masonry">
+        <div class="gallery-item">
+          <div class="gallery-item-inner" style="background: #2C2416; font-size: 90px;">💍</div>
+          <div class="gallery-item-label">Kundan Bridal Set</div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-item-inner" style="background: #E0D8CC;">💎</div>
+          <div class="gallery-item-label">Diamond Solitaire</div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-item-inner" style="background: #D4C4A0;">📿</div>
+          <div class="gallery-item-label">Temple Necklace</div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-item-inner" style="background: #C8B888;">⚜️</div>
+          <div class="gallery-item-label">Antique Jhumkas</div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-item-inner" style="background: #302818;">🌸</div>
+          <div class="gallery-item-label">Bridal Mang Tikka</div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-item-inner" style="background: #D8D8D8;">🥈</div>
+          <div class="gallery-item-label">Silver Choker</div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-item-inner" style="background: #D0C090;">🌿</div>
+          <div class="gallery-item-label">Gold Leaf Bracelet</div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-item-inner" style="background: #E8E0D4;">✨</div>
+          <div class="gallery-item-label">Diamond Bangles</div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-item-inner" style="background: #1C1A17; font-size: 100px;">👑</div>
+          <div class="gallery-item-label">Royal Collection</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div><!-- end #page-gallery -->
+
+
+<!-- ══════════════════════════════════
+         CONTACT PAGE
+══════════════════════════════════ -->
+<div id="page-contact" class="page">
+  <div style="padding-top: 72px;">
+
+    <section style="padding-bottom: 80px;">
+      <div class="section-tag">Get in Touch</div>
+      <h2 class="section-title">We'd Love to <em>Hear</em><br>from You</h2>
+      <div class="divider"></div>
+
+      <div class="contact-split" style="margin-top: 60px;">
+
+        <!-- Form -->
+        <div class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">First Name</label>
+              <input class="form-input" type="text" placeholder="Anita" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Last Name</label>
+              <input class="form-input" type="text" placeholder="Sharma" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input class="form-input" type="email" placeholder="anita@example.com" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone Number</label>
+            <input class="form-input" type="tel" placeholder="+91 98765 43210" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">I'm Interested In</label>
+            <select class="form-select">
+              <option value="">Select a service</option>
+              <option>Bridal Jewellery</option>
+              <option>Diamond Collection</option>
+              <option>Gold Jewellery</option>
+              <option>Silver Jewellery</option>
+              <option>Custom Design</option>
+              <option>Repair &amp; Restoration</option>
+              <option>Exchange Programme</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Your Message</label>
+            <textarea class="form-textarea" placeholder="Tell us about the occasion, your budget, or any specific design in mind..."></textarea>
+          </div>
+          <div class="btn-primary" onclick="submitForm()" style="text-align: center; margin-top: 12px;">Send Message</div>
+        </div>
+
+        <!-- Info -->
+        <div class="contact-info">
+          <div class="info-block">
+            <div class="info-label">Visit Our Store</div>
+            <div class="info-text">123, Sarafa Bazar<br>Indore, Madhya Pradesh<br>452001</div>
+            <div class="info-sub">Near Rajwada Palace · Easy Parking Available</div>
+          </div>
+          <div class="info-block">
+            <div class="info-label">Opening Hours</div>
+            <div class="info-text">Mon – Sat: 10:00 AM – 9:00 PM</div>
+            <div class="info-sub">Sunday: 11:00 AM – 7:00 PM · Open on all festival days</div>
+          </div>
+          <div class="info-block">
+            <div class="info-label">Call Us</div>
+            <div class="info-text">+91 98765 43210</div>
+            <div class="info-sub">+91 73120 56789 (WhatsApp)</div>
+          </div>
+          <div class="info-block">
+            <div class="info-label">Email</div>
+            <div class="info-text" style="font-size: 17px;">info@krishnajewellers.in</div>
+            <div class="info-sub">We reply within 4 business hours</div>
+          </div>
+          <div class="map-placeholder">
+            <div class="map-grid"></div>
+            <div class="map-pin">
+              <div class="map-pin-icon"></div>
+              <div class="map-label">Krishna Jewellers · Sarafa Bazar</div>
+            </div>
+          </div>
+          <div class="social-row">
+            <div class="social-btn" title="Instagram">📸</div>
+            <div class="social-btn" title="Facebook">📘</div>
+            <div class="social-btn" title="WhatsApp">💬</div>
+            <div class="social-btn" title="YouTube">▶️</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+</div><!-- end #page-contact -->
+
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="nav-logo" onclick="goTo('home')" style="color: var(--cream);">Krishna <span style="color: var(--gold);">Jewellers</span></span>
+      <p class="footer-tagline">Crafting memories since 1987.<br>Every piece a promise, every jewel a story.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Navigate</div>
+      <ul>
+        <li><a onclick="goTo('home')">Home</a></li>
+        <li><a onclick="goTo('about')">About Us</a></li>
+        <li><a onclick="goTo('products')">Collections</a></li>
+        <li><a onclick="goTo('gallery')">Gallery</a></li>
+        <li><a onclick="goTo('contact')">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Collections</div>
+      <ul>
+        <li><a onclick="goTo('products')">Bridal Sets</a></li>
+        <li><a onclick="goTo('products')">Diamond Rings</a></li>
+        <li><a onclick="goTo('products')">Gold Necklaces</a></li>
+        <li><a onclick="goTo('products')">Silver Jewellery</a></li>
+        <li><a onclick="goTo('products')">Antique Pieces</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Services</div>
+      <ul>
+        <li><a onclick="goTo('products')">Custom Design</a></li>
+        <li><a onclick="goTo('products')">Repair &amp; Restore</a></li>
+        <li><a onclick="goTo('products')">Exchange</a></li>
+        <li><a onclick="goTo('products')">Certification</a></li>
+        <li><a onclick="goTo('contact')">Book Appointment</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2024 Krishna Jewellers, Indore. All rights reserved.</div>
+    <div class="footer-legal">
+      <a>Privacy Policy</a>
+      <a>Terms of Service</a>
+      <a>BIS Registration</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast Notification -->
+<div class="toast" id="toast">✓ Message sent! We'll get back to you shortly.</div>
+
+<!-- ══════════ JAVASCRIPT ══════════ -->
+<script>
+  const pages = ['home', 'about', 'products', 'gallery', 'contact'];
+
+  function goTo(page) {
+    pages.forEach(function(p) {
+      document.getElementById('page-' + p).classList.remove('active');
+      var navEl = document.getElementById('nav-' + p);
+      if (navEl) navEl.classList.remove('active');
+    });
+    document.getElementById('page-' + page).classList.add('active');
+    var navEl = document.getElementById('nav-' + page);
+    if (navEl) navEl.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function filterProducts(cat, btn) {
+    document.querySelectorAll('.filter-btn').forEach(function(b) {
+      b.classList.remove('active');
+    });
+    btn.classList.add('active');
+    document.querySelectorAll('.product-card').forEach(function(card) {
+      if (cat === 'all' || card.dataset.cat === cat) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  function submitForm() {
+    var toast = document.getElementById('toast');
+    toast.classList.add('show');
+    setTimeout(function() {
+      toast.classList.remove('show');
+    }, 3500);
+  }
+</script>
+
+</body>
+</html>
